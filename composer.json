@@ -1,5 +1,5 @@
 {
-  "name": "swisnl/json-api-server",
+  "name": "swisnl/json-api-server-sigitas",
   "type": "library",
   "description": "Set up a JSON API in Laravel in just a few minutes.",
   "keywords": [
