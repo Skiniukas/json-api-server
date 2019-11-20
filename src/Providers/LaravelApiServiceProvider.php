@@ -2,7 +2,6 @@
 
 namespace Swis\JsonApi\Server\Providers;
 
-use Dimsav\Translatable\TranslatableServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -39,13 +38,11 @@ class LaravelApiServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->register(TranslatableServiceProvider::class);
 
         $this->commands([
             GenerateAllCommand::class,
             GenerateApiControllerCommand::class,
             GenerateModelCommand::class,
-            GenerateModelTranslationCommand::class,
             GeneratePolicyCommand::class,
             GenerateRepositoryCommand::class,
             GenerateModelPermissionsCommand::class,
