@@ -18,6 +18,7 @@ use Swis\JsonApi\Server\Console\Commands\GenerateRoutesCommand;
 use Swis\JsonApi\Server\Http\Middleware\ConfigureLocale;
 use Swis\JsonApi\Server\Http\Middleware\InspectContentType;
 use Symfony\Component\Finder\Finder;
+use Astrotomic\Translatable\TranslatableServiceProvider;
 
 class LaravelApiServiceProvider extends ServiceProvider
 {
@@ -38,11 +39,13 @@ class LaravelApiServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->app->register(TranslatableServiceProvider::class);
 
         $this->commands([
             GenerateAllCommand::class,
             GenerateApiControllerCommand::class,
             GenerateModelCommand::class,
+            GenerateModelTranslationCommand::class,
             GeneratePolicyCommand::class,
             GenerateRepositoryCommand::class,
             GenerateModelPermissionsCommand::class,
