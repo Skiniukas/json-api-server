@@ -1,7 +1,7 @@
 {
-  "name": "swisnl/json-api-server-sigitas",
-  "type": "library",
-  "description": "Set up a JSON API in Laravel in just a few minutes.",
+  "name": "sigitas/json-api-server",
+  "type": "project",
+  "description": "Set up a JSON API in Laravel in just a few minutes (Sigitas).",
   "keywords": [
     "swisnl",
     "laravel",
@@ -15,24 +15,6 @@
     {
       "name": "Arnaud van Zandwijk",
       "email": "arnaud@swis.nl",
-      "homepage": "https://www.swis.nl",
-      "role": "Developer"
-    },
-    {
-      "name": "Björn Brala",
-      "email": "bjorn@swis.nl",
-      "homepage": "https://www.swis.nl",
-      "role": "Developer"
-    },
-    {
-      "name": "Dylan de Wit",
-      "email": "ddewit@swis.nl",
-      "homepage": "https://www.swis.nl",
-      "role": "Developer"
-    },
-    {
-      "name": "Dani Tulp",
-      "email": "dtulp@swis.nl",
       "homepage": "https://www.swis.nl",
       "role": "Developer"
     }
